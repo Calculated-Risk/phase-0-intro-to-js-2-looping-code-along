@@ -1,25 +1,24 @@
-// Code your solutions in this file
+// function writeCards that accepts two arguments
+// array of string name and event name.
 let names = [];
 
-function writeCards(names){
-    let thankYou = [];
-for (let i = 0; i < names.length; i++ ){
-    thankYou[i] =`Thank you, ${names[i]}, for the wonderful surprise gift!`;
-    debugger;
-    console.log(thankYou)
+function writeCards(names, event){
+ let newArray = [];
+ debugger;
+//create a for loop wih a counter that starts at 0 and 
+//increments at the end of each loop and should stop
+//at the end of the length of array
+for( let i = 0; i < names.length; i++){
+   newArray[i] = `Thank you, ${names[i]}, for the wonderful ${event} gift!`
 }
-return thankYou;
+ return newArray;
 }
-writeCards(names);
 
-///////////////////////////////////////////////////////////////////////////////////////
-
-
-function countDown(num){ 
+function countDown(num){
     let i = num;
-    for (i = num; i >=0; i--){
-        console.log(i)
+    while ( i >= 0){
+        console.log(i--)
     }
-
-  }
-
+    return countDown
+}
+countDown(numbers)
